@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "869474843882",
+    "project_id": "ultimateplayerhq-c21b2",
+    "storage_bucket": "ultimateplayerhq-c21b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869474843882:android:26842bf8cfe71179ed6b93",
+        "android_client_info": {
+          "package_name": "com.xminds.ultimateplayerhq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869474843882-0faj1t7j65jvn04a1aq95ktjsdvrrv9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUxhuQ03Ilo5PrbdP4VCG6zDEOrmAVvoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869474843882-0faj1t7j65jvn04a1aq95ktjsdvrrv9e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869474843882-8flis617gl54085p0p8fcdbe1ennne8i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ultimaplayerhq.ultimaplayerhq"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

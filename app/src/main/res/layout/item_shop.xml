@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/rect_white"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/iv_thumb"
+        android:layout_weight="1"
+        app:actualImageScaleType="center" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:id="@+id/tv_title"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/lorem"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_14ssp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:id="@+id/tv_price"
+        android:textStyle="bold"
+        android:text="£ 201"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"/>
+</LinearLayout>

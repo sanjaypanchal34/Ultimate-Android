@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageResource="@drawable/new_bg"
+        app:actualImageScaleType="centerCrop" />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/new_toolbar_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/welcome"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />-->
+
+
+    <TextView
+        android:id="@+id/tv_coach_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_above="@+id/tv_player_login"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:background="@drawable/rect_white_border"
+        android:fontFamily="@font/teko_s_b"
+        android:gravity="center"
+        android:text="Coach Login"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textColorHint="#50ffffff"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:id="@+id/tv_player_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_above="@+id/tv_sign_Up"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:background="@drawable/rect_white_border"
+        android:fontFamily="@font/teko_s_b"
+        android:gravity="center"
+        android:text="Player Login"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textColorHint="#50ffffff"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:fontFamily="@font/teko_l"
+        android:textColor="@color/white"
+        android:text="Don't have an account? Sign Up"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:id="@+id/tv_sign_Up"
+        android:textSize="@dimen/_18ssp"
+        android:textColorHint="#50ffffff"
+        android:textAllCaps="true"/>
+
+
+</RelativeLayout>

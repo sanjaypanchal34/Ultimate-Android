@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SelectLoginTypeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/coach_office_logo" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:id="@+id/ib_coach"
+        android:src="@drawable/coach_login" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:scaleType="fitXY"
+        android:id="@+id/ib_player"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:src="@drawable/player_login" />
+</LinearLayout>

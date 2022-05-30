@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SquadActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:theme="@style/coachToolbarStyle" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/coach_office_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/coach_grd"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/teko_b"
+                        android:text="@string/player"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_30sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:src="@drawable/coach_squad"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Player Name*"
+                    android:inputType="textPersonName"
+                    android:id="@+id/edt_name"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:id="@+id/edt_email"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:id="@+id/edt_phone"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:id="@+id/edt_address"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Position*"
+                    android:id="@+id/edt_position"
+                    android:entries="@array/positions"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Appearances"
+                    android:id="@+id/edt_appearances"
+                    android:inputType="text"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Goals"
+                    android:inputType="number"
+                    android:id="@+id/edt_goals"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Assists"
+                    android:id="@+id/edt_assists"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="MOM"
+                    android:id="@+id/edt_mom"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Kit Color"
+                    android:id="@+id/edt_kit_color"
+                    android:entries="@array/kit_colors"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:popupBackground="@color/purple"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@drawable/rect_white_border"
+                    android:fontFamily="@font/teko_s_b"
+                    android:hint="Position Number*"
+                    android:id="@+id/edt_jersey_num"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#50ffffff"
+                    android:textSize="@dimen/_16ssp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_save"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:fontFamily="@font/teko_b"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_16ssp"
+                    app:backgroundTint="#BB1433"
+                    app:cornerRadius="0dp"
+                    app:elevation="0dp"
+                    app:icon="@drawable/coach_forward"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="@dimen/_15sdp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

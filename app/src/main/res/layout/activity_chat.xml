@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/edit"
+        app:navigationIcon="?android:homeAsUpIndicator"
+        app:theme="@style/coachToolbarStyle"
+        app:titleTextColor="@color/colorPrimary" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="Coach's Office"
+            android:id="@+id/tv_title"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/teko_r"
+            android:textSize="@dimen/_16ssp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        tools:itemCount="3"
+        android:paddingBottom="@dimen/_16sdp"
+        android:fitsSystemWindows="true"
+        tools:listitem="@layout/item_chat_left"
+        android:id="@+id/rv_chat"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:paddingHorizontal="@dimen/_5sdp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/edt_text"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:textCursorDrawable="@drawable/cursor_black"
+            android:background="@drawable/border_black"
+            android:fontFamily="@font/teko_r" />
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/iv_attach"
+            android:src="@drawable/ic_baseline_add_24"
+            app:tint="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_send"
+            android:layout_height="@dimen/_40sdp"
+            android:enabled="false"
+
+            android:text="@string/send" />
+    </LinearLayout>
+</LinearLayout>

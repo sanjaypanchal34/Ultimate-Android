@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="#DBD2DB"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="gone" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/_18sdp">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/teko_b"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/_4sdp"
+                android:text="01"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/teko_r"
+            android:text="@string/football_team_name"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_22ssp" />
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/teko_r"
+            android:gravity="center_vertical"
+            android:text="GK"
+            android:layout_gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Appreance: asdf"
+            android:id="@+id/tv_appreance"
+            android:fontFamily="@font/teko_r"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Assist: 12"
+            android:id="@+id/tv_assists"
+            android:fontFamily="@font/teko_r"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Goal: 12"
+            android:id="@+id/tv_goal"
+            android:fontFamily="@font/teko_r"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MOM: 12"
+            android:id="@+id/tv_mom"
+            android:fontFamily="@font/teko_r"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="end">
+
+
+
+        <ImageButton
+            android:id="@+id/ib_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="#959595"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_clear"
+            app:tint="@color/white" />
+    </LinearLayout>
+</LinearLayout>

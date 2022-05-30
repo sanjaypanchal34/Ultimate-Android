@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:gravity="center">
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="@dimen/_10sdp"
+           app:cardElevation="@dimen/_4sdp"
+           app:cardUseCompatPadding="true"
+           app:contentPadding="@dimen/_10sdp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/rect_grey"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical"
+                   android:padding="@dimen/_10sdp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/plans"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_14ssp"
+                       android:textStyle="bold" />
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="@string/vip_membership"
+                       android:id="@+id/tv_plan"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_12ssp" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/access_content"
+                           android:textColor="@color/blue"
+                           android:textSize="@dimen/_10ssp" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="@dimen/_10sdp"
+                           android:layout_marginLeft="@dimen/_10sdp"
+                           android:text="@string/free"
+                           android:visibility="gone"
+                           android:textColor="@color/green"
+                           android:textSize="@dimen/_10ssp" />
+                   </LinearLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="@string/start_up_plan"
+                       android:visibility="gone"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_12ssp" />
+
+                   <LinearLayout
+                       android:visibility="gone"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/access_content"
+                           android:textColor="@color/blue"
+                           android:textSize="@dimen/_10ssp" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="@dimen/_10sdp"
+                           android:layout_marginLeft="@dimen/_10sdp"
+                           android:text="@string/free"
+                           android:textColor="@color/green"
+                           android:textSize="@dimen/_10ssp" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_marginTop="@dimen/_8sdp"
+                       android:layout_height="wrap_content">
+                       <com.google.android.material.button.MaterialButton
+                           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           app:strokeColor="@android:color/darker_gray"
+                           android:layout_height="@dimen/_35sdp"
+                           android:text="@string/view_plan_details"
+                           android:textAllCaps="false"
+                           android:id="@+id/btn_detail"
+                           app:elevation="@dimen/_4sdp"
+                           android:textSize="@dimen/_8ssp"
+                           app:backgroundTint="@color/white"
+
+                           android:layout_marginRight="@dimen/_5sdp"
+                           android:textColor="@color/black"
+                           app:rippleColor="?colorOnPrimary"
+                           android:layout_marginEnd="@dimen/_5sdp" />
+                       <com.google.android.material.button.MaterialButton
+                           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:id="@+id/btn_join"
+                           android:textSize="@dimen/_8ssp"
+                           app:backgroundTint="@color/white"
+                           app:strokeColor="@android:color/darker_gray"
+                           android:layout_height="@dimen/_35sdp"
+                           android:text="@string/join_new_plan"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:textAllCaps="false"
+                           app:elevation="@dimen/_4sdp"
+                           android:textColor="@color/black"
+                           app:rippleColor="?colorOnPrimary"
+                           android:layout_marginLeft="@dimen/_5sdp" />
+                   </LinearLayout>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/rect_grey"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical"
+                   android:padding="@dimen/_10sdp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/profile"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_14ssp"
+                       android:textStyle="bold" />
+
+
+                   <com.facebook.drawee.view.SimpleDraweeView
+                       android:layout_width="@dimen/_60sdp"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:layout_height="@dimen/_60sdp"
+                       app:actualImageResource="@drawable/avatar"
+                       app:roundedCornerRadius="@dimen/_30sdp"
+                       android:id="@+id/iv_profile"
+                       android:scaleType="fitXY" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="Sanjay Patel"
+                       android:id="@+id/tv_name"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10ssp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:id="@+id/tv_email"
+                       android:text="Sanjay@iihglobal.com"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/_10ssp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:id="@+id/tv_edit_profile"
+                       android:text="@string/edit_your_profile"
+                       android:textColor="@color/blue"
+                       android:textSize="@dimen/_12ssp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="@string/change_your_email"
+                       android:id="@+id/tv_edit_email"
+                       android:textColor="@color/blue"
+                       android:textSize="@dimen/_12ssp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="@string/change_your_password"
+                       android:id="@+id/tv_change_password"
+                       android:textColor="@color/blue"
+                       android:textSize="@dimen/_12ssp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="@string/logout"
+                       android:id="@+id/tv_logout"
+                       android:textColor="@color/blue"
+                       android:textSize="@dimen/_12ssp" />
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+   </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

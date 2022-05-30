@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_8sdp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:id="@+id/iv_thumb"
+            app:actualImageResource="@drawable/ic_launcher_background"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/teko_r"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:text="@string/imagepicker_title_folder"
+            android:id="@+id/tv_title"
+            android:padding="@dimen/_3sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:text="@string/lorem"
+            android:fontFamily="@font/teko_l"
+            android:id="@+id/tv_desc"
+            android:padding="@dimen/_3sdp"/>
+    </LinearLayout>
+
+</LinearLayout>

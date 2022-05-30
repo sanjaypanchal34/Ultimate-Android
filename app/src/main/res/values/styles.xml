@@ -1,0 +1,92 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/teko_r</item>
+        <item name="fontFamily">@font/teko_r</item>
+        <item name="buttonStyle">@style/AceButtonStyle</item>
+        <item name="android:buttonStyle">@style/AceButtonStyle</item>
+    </style>
+    <style name="AceButtonStyle" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/teko_r</item>
+        <item name="fontFamily">@font/teko_r</item>
+    </style>
+    <style name="AceEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">@font/teko_r</item>
+        <item name="fontFamily">@font/teko_r</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AceCheckboxtStyle" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/teko_r</item>
+
+        <item name="fontFamily">@font/teko_r</item>
+    </style>
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="toolbarStyle">@style/coachToolbarStyle</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Coach" parent="AppTheme2">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.OutlinedBox" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/teko_s_b</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="myTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.AppTheme.TextInputEditText.OutlinedBox</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="coachToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="colorControlNormal">#BD3F56</item>
+    </style>
+
+
+    <style name="editTextCursorBlack" parent="Widget.AppCompat.EditText">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="android:textCursorDrawable">@drawable/cursor_black</item>
+    </style>
+
+    <style name="dialog_theme" parent="AppTheme2">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AddTrainingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:theme="@style/coachToolbarStyle" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/coach_grd"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/teko_b"
+                android:text="Create Match Event"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/teko_m"
+                android:text="Event Date:- 22 Feb 2022"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Event Title*"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:hint="Event Title"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/teko_m"
+                        android:text="Time from*"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/edt_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:background="@drawable/rect_white_border"
+                        android:fontFamily="@font/teko_s_b"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="#50ffffff"
+                        android:textSize="@dimen/_16ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/teko_m"
+                        android:text="Time to*"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/edt_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:background="@drawable/rect_white_border"
+                        android:fontFamily="@font/teko_s_b"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="#50ffffff"
+                        android:textSize="@dimen/_16ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Location*"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/edt_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/edt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:gravity="top"
+                android:hint="Event Description"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Players*"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/tv_players"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:gravity="center_vertical"
+                android:hint="Players"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_players"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_multi_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Match Day"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/tv_match_day"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:gravity="center_vertical"
+                android:hint="Choose Match Day"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_match_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_multi_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Score"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/edt_score"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:hint="Score"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Assists"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/edt_assists"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:hint="Assists"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_assists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_multi_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Goalscorer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/edt_goal_scorer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:hint="Goalscorer"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_goal_scorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_multi_white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Player of the Match"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/tv_player_of_match"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:gravity="center_vertical"
+                android:hint="Player of the Match"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Result"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:hint="Kit Color"
+                android:id="@+id/sp_result"
+                android:entries="@array/kit_colors"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:popupBackground="@color/purple"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Upload Logo"
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/teko_s_b"
+                    android:text="Choose File"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/btn_upload"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/white"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/teko_m"
+                    android:textSize="@dimen/_14ssp"
+
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_file_name"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:hint="No File Chosen"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:id="@+id/iv_logo"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:placeholderImage="@drawable/ig_placeholder"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/teko_m"
+                android:id="@+id/tv_till_date_lable"
+                android:text="Do you  want to repeat event?"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rd_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/teko_r"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Monthly"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    app:buttonTint="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rd_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/teko_r"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Weekly"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    app:buttonTint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_date_pick_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/teko_m"
+                android:text="Till Date?*"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_date_pick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/rect_white_border"
+                android:fontFamily="@font/teko_s_b"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textColorHint="#50ffffff"
+                android:textSize="@dimen/_16ssp"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:fontFamily="@font/teko_b"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_16ssp"
+                app:backgroundTint="#BB1433"
+                app:cornerRadius="0dp"
+                app:elevation="0dp"
+                app:icon="@drawable/coach_forward"
+                app:iconGravity="textEnd"
+                app:iconPadding="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

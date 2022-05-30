@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="positions">
+        <item>Position*</item>
+        <item>GK</item>
+        <item>RB</item>
+        <item>LB</item>
+        <item>RWB</item>
+        <item>LWB</item>
+        <item>CB</item>
+        <item>CDM</item>
+        <item>CM</item>
+        <item>LM</item>
+        <item>RM</item>
+        <item>CAM</item>
+        <item>LW</item>
+        <item>RW</item>
+        <item>CF</item>
+        <item>ST</item>
+    </string-array>
+    <string-array name="kit_colors" >
+        <item>Select Kit Color*</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Pink</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="result" >
+        <item>Select Result</item>
+        <item>Won</item>
+        <item>Lose</item>
+        <item>Draw</item>
+    </string-array>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SquadActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:theme="@style/coachToolbarStyle" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/coach_office_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/coach_grd"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/teko_b"
+                        android:text="@string/squad"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_30sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:src="@drawable/coach_squad" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/teko_r"
+                    android:text="Register and manage players and coaches."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_player"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/teko_s_b"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/register_player"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_14ssp"
+                    app:backgroundTint="@color/colorPrimary2"
+                    app:cornerRadius="0dp"
+                    app:elevation="0dp"
+                    app:icon="@drawable/coach_forward"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="@dimen/_15sdp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_coach"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/teko_s_b"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/register_coach"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_14ssp"
+                    app:backgroundTint="@color/colorPrimary2"
+                    app:cornerRadius="0dp"
+                    app:elevation="0dp"
+                    app:icon="@drawable/coach_forward"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="@dimen/_15sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/teko_r"
+                    android:text="@string/football_team_name"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25sdp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tab_layout"
+                    app:tabBackground="@drawable/tab_bg_selector"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:tabSelectedTextColor="@color/purple"
+                    app:tabIndicator="@color/purple"
+                    app:tabIndicatorFullWidth="true"
+                    app:tabMode="scrollable"
+                    app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+                    android:background="@android:color/transparent"
+                    app:tabTextColor="#50ffffff"
+
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/player" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coach" />
+                </com.google.android.material.tabs.TabLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@color/white"/>
+
+                <FrameLayout
+                    android:id="@+id/manager_player_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:textAllCaps="false"
+        android:paddingHorizontal="@dimen/_35sdp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:id="@+id/tv_sub_category"
+        android:textColor="@color/black"
+        android:text="Title Goes Here"/>
+</LinearLayout>

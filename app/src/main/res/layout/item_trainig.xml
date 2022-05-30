@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_event"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/trainig" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_result"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/trainig"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/teko_s_b"
+                android:gravity="center"
+                android:paddingTop="@dimen/_4sdp"
+                android:text="D"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/teko_b"
+            android:text="Training title"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp" />
+
+        <TextView
+            android:id="@+id/tv_event_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/teko_m"
+            android:maxLines="3"
+            android:text="@string/lorem"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="@string/time"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="18:30"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="@string/location"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="Location name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_rejected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="Rejected"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_18ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_rejected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_accepted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="Accepted"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_18ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_accepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/teko_b"
+                android:maxLines="3"
+                android:text="Pending"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_18ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btn_view"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="#BB1433"
+                android:drawableEnd="@drawable/ic_eye"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/teko_b"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="@string/view_detail"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <ImageView
+                android:id="@+id/btn_edit"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="#BB1433"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:text=""
+                android:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="#BB1433"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/ic_delete" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
